@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Warframe</title>
+</head>
+<body>
+<img src="Warframe.png" alt="Warframe.png" width="250" hight="299">
+<h1>What is it about?</h1>
+<p> Warframe you play as a Tenno, a surviving race of beings and the only ones who can use the incredible Warframes. Your role is to try and take back the solar system from the horrific beings that inhabit it.</p>
+<a href="https://www.warframe.com/">Warframe.com</a>
+
+<a href="file:///C:/Users/JP1694/Downloads/warframe/Author.html" target="_self">Author bio!</a>
+
+</body>
+</html>

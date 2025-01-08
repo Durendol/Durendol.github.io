@@ -1,0 +1,64 @@
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    text-align: center
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(57, 16, 238);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(68, 224, 28);
+}
+
+/* selected link */
+a:active {
+  color: rgb(220, 235, 15);
+}
+
+body{
+    background-image: url(top.jpg);
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+body{background-color:#6a5acd;}
+
+#div1 {background-color:#d37d2c46;color:white;padding:100px; width: 300px;margin: auto; border:10px; text-align: center;  color:rgba(255, 255, 255, 0.692);}
+h1 {color:rgba(114, 13, 197, 0.623);}
+p{color:rgba(0, 255, 34, 0.692);}
+
+#img1{
+    image: url(water.jpg);
+    repeat: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#img2 {
+margin-left: auto ;
+margin-right: auto;
+display: block;
+}
+#div5{text-align:center;
+
+}
+.p1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }

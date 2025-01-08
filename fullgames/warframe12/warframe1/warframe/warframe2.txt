@@ -1,0 +1,12 @@
+<div style="background-color:lightblue;color:white;padding:200px;">
+<h1 style="color:purple;">Warframe</h1>
+<h1 style="color:purple;">What is it about?</h1>
+<body>
+<img src="/images/Warframe.png" alt="Warframe" width="250" hight="299">
+<h1 style="border:2px solid darkBlue;"> <p style="color:Darkblue;">  Warframe you play as a Tenno, a surviving race of beings and the only ones who can use the incredible Warframes. Your role is to try and take back the solar system from the horrific beings that inhabit it.</p> </h1>
+<a href="https://www.warframe.com/">Warframe.com</a>
+
+<a href="file:///C:/Users/JP1694/Downloads/warframe/Author.html" target="_self">Author bio!</a>
+
+</body>
+</html>
