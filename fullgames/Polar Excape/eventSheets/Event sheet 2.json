@@ -1,0 +1,423 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Randomising",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 926128689572685
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 319665652844637
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Puzzle",
+					"sid": 628395431129175
+				}
+			],
+			"sid": 767689111749379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 892976568483170,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Puzzle"
+					}
+				},
+				{
+					"id": "can-move-direction",
+					"objectClass": "Puzzle",
+					"sid": 397580796037846,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "right",
+						"distance": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Puzzle",
+					"sid": 170888760432700,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 111053870779943
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 607332497270538,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Puzzle"
+					}
+				},
+				{
+					"id": "can-move-direction",
+					"objectClass": "Puzzle",
+					"sid": 179332956351633,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "left",
+						"distance": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Puzzle",
+					"sid": 171087077004478,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 923216526319107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 923682121180440,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Puzzle"
+					}
+				},
+				{
+					"id": "can-move-direction",
+					"objectClass": "Puzzle",
+					"sid": 201992476896789,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "up",
+						"distance": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Puzzle",
+					"sid": 412914004653074,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 426722118520712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 674544594090331,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Puzzle"
+					}
+				},
+				{
+					"id": "can-move-direction",
+					"objectClass": "Puzzle",
+					"sid": 667024463261613,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "down",
+						"distance": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Puzzle",
+					"sid": 236263047840416,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 406283152974087
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Randdom",
+					"sid": 181845535526365
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 203969242699159,
+					"parameters": {
+						"variable": "Randomising",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Puzzle",
+					"sid": 850054765126508,
+					"parameters": {
+						"instance-variable": "RandomNumber",
+						"value": "random (1,100)"
+					}
+				}
+			],
+			"sid": 957553414099674
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 878315499411437,
+					"parameters": {
+						"variable": "Randomising"
+					}
+				},
+				{
+					"id": "for-each-ordered",
+					"objectClass": "System",
+					"sid": 972146368585481,
+					"parameters": {
+						"object": "Puzzle",
+						"expression": "Puzzle.RandomNumber",
+						"order": "ascending"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 731120613771410
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Puzzle",
+					"sid": 700281646931636,
+					"parameters": {
+						"frame-number": "loopindex"
+					}
+				}
+			],
+			"sid": 288537457590265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Return",
+					"sid": 233133902401835
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 795787011955033,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 710591919532748
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 126549701891481
+				}
+			],
+			"actions": [],
+			"sid": 791109405374637,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "SolvePuzzle",
+					"type": "boolean",
+					"initialValue": "true",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 931415317102420
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 474411222882555,
+							"parameters": {
+								"object": "Puzzle"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 727202382775725,
+							"parameters": {
+								"first-value": "Puzzle.AnimationFrame",
+								"comparison": 1,
+								"second-value": "(((Puzzle.Y-150)/100)*3) + ((Puzzle.X-150)/100)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 803008400094400,
+							"parameters": {
+								"variable": "SolvePuzzle",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 253211499497673
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 926258939145714,
+							"parameters": {
+								"variable": "SolvePuzzle"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 184716205880779,
+							"parameters": {
+								"variable": "Is_Solved",
+								"value": "true"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 258227235922182,
+							"parameters": {
+								"layout": "Layout 1"
+							}
+						}
+					],
+					"sid": 302714964032162
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 276676267710722,
+					"parameters": {
+						"key": 106
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 643097434778319,
+					"parameters": {
+						"variable": "Is_Solved",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 418846591630157,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 425468046803891
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 940532133637039
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 305097325634192,
+					"parameters": {
+						"audio-file": "Polar Excape Slide Puzzle SFX (1)",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 575143941781805
+		}
+	],
+	"sid": 392502134519496
+}
