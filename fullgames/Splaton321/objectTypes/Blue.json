@@ -1,0 +1,52 @@
+{
+	"name": "Blue",
+	"plugin-id": "Sprite",
+	"sid": 177990776150371,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 140,
+						"height": 131,
+						"originX": 0.9,
+						"originY": 0.9618320610687023,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5828189,
+						"collisionPoly": {
+							"points": [
+								0.007142857142857143,
+								0.007633587786259542,
+								1,
+								0.007633587786259542,
+								1,
+								1,
+								0.007142857142857143,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 647604155198323,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
